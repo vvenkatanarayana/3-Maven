@@ -30,11 +30,7 @@ sample pom.xml   [Project Object Model]
     	<artifactId>log4j</artifactId>
     	<version>1.2.17</version>
 	</dependency>
-
-
     </dependencies>
-
-
     <profiles>
         <profile>
             <id>dev</id>
@@ -52,22 +48,6 @@ sample pom.xml   [Project Object Model]
 
 </project>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Testing frameworks
 -------------------
 java ---> Junit 
@@ -77,21 +57,6 @@ c#  ---> NUnit
 Ruby ---> RSpec
 c++  ---> gtest
 Go  ----> Testfy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 what is test case here?
 -----------------------
 To test the source code programmatically, we are using test cases, These are developed by developers not a DevOps Engineers
@@ -114,22 +79,12 @@ ANS
 
 central repo
 
-
-
-
-
 Maven repositories 
 ==================
-
-
 Maven repositories are locations where Maven artifacts (JAR files, plugins, and other project dependencies) are stored and can be retrieved from.
-
-
 1. maven local repository
 --------------------------
 --> The local repository is a directory on your local machine where Maven stores downloaded artifacts. By default, it is located in the .m2 directory within the user's home directory.
-
-
 linux: ~/.m2/repository
 windows: C:\Users\prasanth\.m2\repository
 mac book: /users/prasanth/.m2/repository
@@ -154,23 +109,11 @@ update under settings tag
 IQ] why we need to change ?
 ANS: For every user we have separate local repo then Hard disk space is increased , so we are giving common repo to all dev team.
 
-
-
-
-
-
-
-
 2. maven central repository
 ----------------------------
 The central repository is the default repository used by Maven, hosted by the Maven community. It contains a vast number of commonly used libraries. If a dependency is not found in the local repository, Maven searches the central repository.
 
 URL: https://repo.maven.apache.org/maven2/
-
-
-
-
-
 
 3. maven remote repository
 --------------------------
@@ -181,26 +124,8 @@ In your orgnaization, We have 5 war files,every one  Dont keep in the cenral rep
 
 NOTE: we will discuss in nexus classes.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Maven life cycles
 =================
-
-
 1. clean Lifecycle
 -------------------
 goals
